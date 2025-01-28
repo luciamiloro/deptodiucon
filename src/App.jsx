@@ -3,17 +3,37 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
 import Subscribe from "./components/Subscribe/Subscribe";
-import Banner2 from "./components/Banner/Banner2";
 import Footer from "./components/Footer/Footer";
+import Pictures from "./components/Pictures/Pictures";
+import ReservationInfo from "./components/ReservationInfo/ReservationInfo";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <main className="overflow-x-hidden bg-white text-dark">
-      <Hero />
-      <Services />
-      <Banner />
+      <Navbar />
+      <section id="ubicacion">
+        <Hero />
+      </section>
+      {/* <section id="ubicacion">
+        <MapView />
+      </section> */}
+
+      <section id="fotos">
+        <Pictures />
+      </section>
+      <section id="servicios">
+        <Services />
+      </section>
+      <section id="precio">
+        <Banner />
+      </section>
+      <section id="reserva">
+      <ReservationInfo />
+      </section>
+      
       <Subscribe />
-      <Banner2 />
+  
       <Footer />
     </main>
   );

@@ -1,54 +1,62 @@
 import React from "react";
-import { RiComputerLine } from "react-icons/ri";
-import { CiMobile3 } from "react-icons/ci";
-import { TbWorldWww } from "react-icons/tb";
-import { IoMdHappy } from "react-icons/io";
-import { BiSupport } from "react-icons/bi";
-import { IoPulseOutline } from "react-icons/io5";
+import { RiWifiLine } from "react-icons/ri"; // Para Wifi
+import { FaParking } from "react-icons/fa"; // Para Estacionamiento
+import { GiCookingPot } from "react-icons/gi"; // Para Cocina completamente equipada
+import { RiHotelBedLine } from "react-icons/ri"; // Para Blanquería
+import { FaSoap } from "react-icons/fa"; // Para Shampoo y jabón
+import { FaTree } from "react-icons/fa"; // Para Patio trasero privado
+import { MdAccessibility } from "react-icons/md"; // Para Planta baja (sin escaleras)
 import { motion } from "framer-motion";
 
 const ServicesData = [
   {
     id: 1,
-    title: "Web Development",
+    title: "Wifi",
     link: "#",
-    icon: <TbWorldWww />,
+    icon: <RiWifiLine />,
     delay: 0.2,
   },
   {
     id: 2,
-    title: "Mobile development",
+    title: "Estacionamiento dentro de la instalación",
     link: "#",
-    icon: <CiMobile3 />,
+    icon: <FaParking />,
     delay: 0.3,
   },
   {
     id: 3,
-    title: "Software development",
+    title: "Cocina completamente equipada",
     link: "#",
-    icon: <RiComputerLine />,
+    icon: <GiCookingPot />,
     delay: 0.4,
   },
   {
     id: 4,
-    title: "Satisfied clients",
+    title: "Blanquería (sábanas y toallas)",
     link: "#",
-    icon: <IoMdHappy />,
+    icon: <RiHotelBedLine />,
     delay: 0.5,
   },
   {
     id: 5,
-    title: "SEO optimization",
+    title: "Shampoo, acondicionador y jabón líquido",
     link: "#",
-    icon: <IoPulseOutline />,
+    icon: <FaSoap />,
     delay: 0.6,
   },
   {
     id: 6,
-    title: "24/7 support",
+    title: "Patio trasero privado",
     link: "#",
-    icon: <BiSupport />,
+    icon: <FaTree />, // Alternativa para "Patio trasero privado"
     delay: 0.7,
+  },
+  {
+    id: 7,
+    title: "Planta baja (sin escaleras, fácil acceso)",
+    link: "#",
+    icon: <MdAccessibility />,
+    delay: 0.8,
   },
 ];
 
@@ -73,12 +81,11 @@ const Services = () => {
   return (
     <section className="bg-white">
       <div className="container pb-14 pt-16">
-        <h1 className="text-4xl font-bold text-left pb-10">
-          Services we provide
-        </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+        <h1 className="text-4xl font-bold text-left pt-10 pb-10">Servicios</h1>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-4 gap-8">
           {ServicesData.map((service) => (
             <motion.div
+              key={service.id}
               variants={SlideLeft(service.delay)}
               initial="initial"
               whileInView={"animate"}
