@@ -9,12 +9,17 @@ const bgStyle = {
   backgroundSize: "cover",
   backgroundPosition: "center",
 };
-const whatsappMessage = "¡Hola! Quiero consultar por disponibilidad para alojamiento en las fechas...";
-const whatsappURL = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
 
 const Subscribe = () => {
+  const phoneNumber = "542945685055"; // Número de teléfono
+  const whatsappMessage =
+    "¡Hola! Quiero consultar por disponibilidad para alojamiento en las fechas...";
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
   return (
-    <section className="bg-white"> {/* Cambiado a bg-white */}
+    <section className="bg-white">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -31,13 +36,16 @@ const Subscribe = () => {
             <h1 className="text-4xl font-bold !leading-snug">
               Reserva tu estadía
             </h1>
-            <p>
-              Consulta por disponibilidad y más información
-            </p>
-            <a href={whatsappURL} target="_blank" rel="noopener noreferrer" className="primary-btn bg-green-500 text-white py-2 px-6 rounded-full inline-flex items-center gap-4 group hover:bg-green-600 transition duration-200">
-            Escribinos al WhatsApp
-            <FaWhatsapp className="text-xl group-hover:animate-bounce" />
-          </a>
+            <p>Consulta por disponibilidad y más información</p>
+            <a
+              href={whatsappURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="primary-btn bg-green-500 text-white py-2 px-6 rounded-full inline-flex items-center gap-4 group hover:bg-green-600 transition duration-200"
+            >
+              Escribinos al WhatsApp
+              <FaWhatsapp className="text-xl group-hover:animate-bounce" />
+            </a>
           </div>
         </motion.div>
       </motion.div>
