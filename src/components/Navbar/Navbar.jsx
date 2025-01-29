@@ -3,8 +3,8 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavbarMenu = [
-  { id: 1, title: "Ubicación", sectionId: "ubicacion" },
-  { id: 2, title: "Fotos", sectionId: "fotos" },
+  { id: 1, title: "Fotos", sectionId: "fotos" },
+  { id: 2, title: "Ubicación", sectionId: "ubicacion" },
   { id: 3, title: "Servicios", sectionId: "servicios" },
   { id: 4, title: "Precio", sectionId: "precio" },
   { id: 5, title: "Reserva", sectionId: "reserva" },
@@ -33,9 +33,10 @@ const Navbar = () => {
         className="container mx-auto py-4 px-6 flex justify-between items-center"
       >
         {/* Logo */}
-        <div>
-          <h1 className="font-bold text-2xl">Alojo Plaza</h1>
-        </div>
+        <div className="flex items-center space-x-2">
+  <img src="/src/assets/bird.png" alt="Bird" className="w-6 h-6" /> {/* Ajusta el tamaño de la imagen */}
+  <h1 className="font-bold text-2xl">Depto Diucón</h1>
+</div>
 
         {/* Desktop Menu */}
         <div className="hidden lg:block">

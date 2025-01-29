@@ -5,8 +5,10 @@ import { GiCookingPot } from "react-icons/gi"; // Para Cocina completamente equi
 import { RiHotelBedLine } from "react-icons/ri"; // Para Blanquería
 import { FaSoap } from "react-icons/fa"; // Para Shampoo y jabón
 import { FaTree } from "react-icons/fa"; // Para Patio trasero privado
+import { FaFirstAid } from "react-icons/fa"; // Para Patio trasero privado
 import { MdAccessibility } from "react-icons/md"; // Para Planta baja (sin escaleras)
 import { motion } from "framer-motion";
+
 
 const ServicesData = [
   {
@@ -56,6 +58,13 @@ const ServicesData = [
     title: "Planta baja (sin escaleras, fácil acceso)",
     link: "#",
     icon: <MdAccessibility />,
+    delay: 0.8,
+  },
+  {
+    id: 8,
+    title: "Botiquín",
+    link: "#",
+    icon: <FaFirstAid  />, // Icono de botiquín en rojo
     delay: 0.8,
   },
 ];

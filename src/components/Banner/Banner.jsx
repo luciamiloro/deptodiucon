@@ -27,7 +27,7 @@ const Banner = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src={BannerPng}
             alt="Imagen del banner"
-            className="w-[350px] md:max-w-[450px] object-cover drop-shadow-sm"
+            className="w-[350px] sm:w-[450px] md:max-w-[450px] object-cover drop-shadow-sm"
           />
         </div>
         {/* Texto del Banner */}

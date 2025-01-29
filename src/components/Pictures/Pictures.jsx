@@ -29,7 +29,7 @@ const Pictures = () => {
   return (
     <section className="bg-white">
       <div className="container pb-14 pt-16">
-        <h1 className="text-4xl font-bold text-left pt-10 pb-10">Fotos por área</h1>
+        <h1 className="text-4xl font-bold text-left pt-10 pb-10">Ambientes</h1>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           navigation

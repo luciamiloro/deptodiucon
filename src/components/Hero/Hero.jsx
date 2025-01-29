@@ -30,7 +30,7 @@ const Hero = () => {
       <Navbar />
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         {/* Brand Info */}
-        <div className="flex flex-col justify-center py-14 md:py-0 relative z-0">
+        <div className="flex flex-col justify-center py-10 md:py-0 relative z-0">
           <div className="text-center md:text-left space-y-10 lg:max-w-[400px]">
             <motion.h1
               variants={FadeUp(0.6)}
@@ -47,7 +47,7 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button
+              {/* <button
                 className="primary-btn w-1/2"
                 onClick={() => {
                   const phoneNumber = "542945685055";
@@ -61,7 +61,7 @@ const Hero = () => {
               >
                 Reservar
                
-              </button>
+              </button> */}
             </motion.div>
           </div>
         </div>

@@ -50,7 +50,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} Alojo Plaza - Departamento en Esquel.
+          © {new Date().getFullYear()} Departamento Diucón en Esquel.
         </div>
       </motion.div>
     </footer>

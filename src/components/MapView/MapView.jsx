@@ -1,14 +1,22 @@
 import React from "react";
-import { MapContainer, TileLayer, Circle } from "react-leaflet";
+import { MapContainer, TileLayer, Circle, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const MapView = () => {
-  // 📍 Coordenadas de San Martín y Perito Moreno, Esquel
   const center = [-42.915900, -71.321950];
 
   return (
-    <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg z-0">
-      <MapContainer center={center} zoom={15} className="w-full h-full">
+    <div className="w-full h-96 sm:h-48 max-h-[500px] sm:max-h-[100px] md:max-h-[350px] lg:max-h-[300px] rounded-lg overflow-hidden shadow-lg z-0">
+      <MapContainer 
+        center={center} 
+        zoom={15} 
+        className="w-full h-full"
+        scrollWheelZoom={false} 
+        dragging={false} 
+        touchZoom={false} 
+        doubleClickZoom={false} 
+        keyboard={false}
+      >
         {/* Capa del mapa */}
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -18,11 +26,11 @@ const MapView = () => {
         {/* Círculo de radio 300 metros */}
         <Circle
           center={center}
-          radius={300}
+          radius={400}
           pathOptions={{
-            color: "yellow", // Borde del círculo
-            fillColor: "yellow", // Color de relleno
-            fillOpacity: 0.3, // Opacidad del relleno
+            color: "yellow",
+            fillColor: "yellow",
+            fillOpacity: 0.3,
           }}
         />
       </MapContainer>
