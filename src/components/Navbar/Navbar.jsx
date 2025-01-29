@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
-import birdIcon from "../assets/bird.png";
+
 const NavbarMenu = [
   { id: 1, title: "Fotos", sectionId: "fotos" },
   { id: 2, title: "Ubicación", sectionId: "ubicacion" },
@@ -34,7 +34,7 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src={birdIcon} alt="Bird" className="w-6 h-6" /> {/* Ajusta el tamaño de la imagen */}
+        <img src="/bird.png" alt="Bird" className="w-6 h-6" />
           <h1 className="font-bold text-2xl">Depto Diucón</h1>
         </div>
 
