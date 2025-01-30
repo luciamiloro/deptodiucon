@@ -28,17 +28,24 @@ const Footer = () => {
             <p className="text-gray-600">¿Tienes preguntas? ¡Estamos aquí para ayudarte!</p>
             <ul className="space-y-2 text-gray-600">
               <li className="flex items-center">
+                <FaHome className="mr-2 text-blue-500" />
+                <a
+                  href="https://www.alquilerargentina.com/alojamientos/al22-Departamento-Departamento-en-el-Centro-Esquel.html"
+                  className="border border-blue-500 text-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white transition-all duration-200"
+                >
+                  Reseñas Alquiler Argentina
+                </a>
+              </li>
+
+
+
+              <li className="flex items-center">
                 <FaWhatsapp className="mr-2 text-green-500" />
                 <a href="https://wa.me/+5492945685055" className="hover:text-primary duration-200">
                   +54 9 2945 685055
                 </a>
               </li>
-              <li className="flex items-center">
-                <FaHome className="mr-2 text-blue-500" /> {/* Reemplazamos el ícono de Instagram con FaHome */}
-                <a href="https://www.alquilerargentina.com/alojamientos/al22-Departamento-Departamento-en-el-Centro-Esquel.html" className="hover:text-primary duration-200">
-                  Reseñas Alquiler Argentina
-                </a>
-              </li>
+
               <li className="flex items-center">
                 <FaMapMarkerAlt className="mr-2 text-red-500" />
                 Esquel, Chubut, Argentina

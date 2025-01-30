@@ -3,8 +3,8 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 
 const NavbarMenu = [
-  { id: 1, title: "Fotos", sectionId: "fotos" },
-  { id: 2, title: "Ubicación", sectionId: "ubicacion" },
+  { id: 1, title: "Ubicación", sectionId: "ubicacion" },
+  { id: 2, title: "Fotos", sectionId: "fotos" },
   { id: 3, title: "Servicios", sectionId: "servicios" },
   { id: 4, title: "Precio", sectionId: "precio" },
   { id: 5, title: "Reserva", sectionId: "reserva" },

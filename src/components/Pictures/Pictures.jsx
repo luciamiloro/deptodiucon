@@ -28,6 +28,7 @@ const areaImages = [
 const Pictures = () => {
   return (
     <section className="bg-white">
+      
       <div className="container pb-14 pt-16">
         <h1 className="text-4xl font-bold text-left pt-10 pb-10">Ambientes</h1>
         <Swiper
@@ -36,6 +37,7 @@ const Pictures = () => {
           pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
+          loop={true}
           className="rounded-2xl shadow-lg relative"
         >
           {areaImages.map((area) => (

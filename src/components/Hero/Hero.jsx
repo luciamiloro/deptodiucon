@@ -30,8 +30,8 @@ const Hero = () => {
       <Navbar />
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         {/* Brand Info */}
-        <div className="flex flex-col justify-center py-10 md:py-0 relative z-0">
-          <div className="text-center md:text-left space-y-10 lg:max-w-[400px]">
+        <div className="flex flex-col justify-center pt-10 md:py-0 relative z-0">
+          <div className="text-center md:text-left md:space-y-10 lg:max-w-[400px]">
             <motion.h1
               variants={FadeUp(0.6)}
               initial="initial"
@@ -67,7 +67,7 @@ const Hero = () => {
         </div>
         
         {/* Reemplazo de la imagen con el mapa */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center h-[380px] md:h-auto">
           <MapView /> {/* Mostramos el mapa en lugar de la imagen */}
         </div>
       </div>

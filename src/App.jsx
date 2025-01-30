@@ -12,12 +12,13 @@ const App = () => {
   return (
     <main className="overflow-x-hidden bg-white text-dark">
       <Navbar />
-      <section id="fotos">
-        <Pictures />
-      </section>
       <section id="ubicacion">
         <Hero />
       </section>
+      <section id="fotos">
+        <Pictures />
+      </section>
+
       {/* <section id="ubicacion">
         <MapView />
       </section> */}
