@@ -31,6 +31,8 @@ const Footer = () => {
                 <FaHome className="mr-2 text-blue-500" />
                 <a
                   href="https://www.alquilerargentina.com/alojamientos/al22-Departamento-Departamento-en-el-Centro-Esquel.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border border-blue-500 text-blue-500 px-3 py-1 rounded-md hover:bg-blue-500 hover:text-white transition-all duration-200"
                 >
                   Reseñas Alquiler Argentina
