@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 const conditions = [
   { id: 1, title: "Pago anticipado", description: "30% en concepto de seña. El saldo restante lo abonás en el ingreso.", icon: <FaMoneyBillWave /> },
   { id: 2, title: "Estadía mínima", description: "2 Noches", icon: <FaCalendarCheck /> },
-  { id: 3, title: "Antelación mínima para reservar", description: "2 días", icon: <FaRegCalendarTimes /> },
+  { id: 3, title: "Horarios check-in y check-out", description: "Check-in flexible | Check-out hasta las 11:00", icon: <FaRegCalendarTimes /> },
+
+  // { id: 3, title: "Antelación mínima para reservar", description: "Ninguna", icon: <FaRegCalendarTimes /> },
 ];
 
 const cancellationPolicy = {
